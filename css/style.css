@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.boton1 {
+    background: rgb(9, 43, 194);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+.boton2 {
+    background: rgb(9, 43, 194);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+.boton3 {
+    background: rgb(9, 43, 194);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+.boton4 {
+    background: rgb(9, 43, 194);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+}
+.caja1 {
+    background: aqua;
+    padding: 10px;
+    margin-top: 10px;
+}
+.logos {
+    height: 400px;
+    margin: 0px;
+    background-color: rgb(63, 228, 57);
+    background-image: url(../images/carrusel.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.aprendiz {
+    display: contents;
+    justify-content: center;
+}
+.caja2 {
+    height: 400px;
+    margin: 0px;
+    background-color: rgb(29, 193, 214);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 10px;
+}
+.caja3 {
+    background: aqua;
+    padding: 10px;
+    margin-top: 10px;
+}
+.caja4 {
+    height: 300px;
+    margin: 10px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 14px;
+}
+.caja6 {
+    background: aqua;
+    padding: 10px;
+    margin-top: 10px;
+}

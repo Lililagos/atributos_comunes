@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--Aquí va el tributo lang-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Aquí van los estilos flexgrid -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <title>Atributos comunes</title>
+</head>
+    <body>
+
+<!-- Aquí van los atributos-->
+    <header class="row">
+            <div class="col-xs-12 centro">
+            <h1>Atributos comunes css</h1>
+            </div>
+    </header>
+
+<!-- Este es un ejemplo de "class"-->
+    <nav class="row">
+        <div class="col-xs-3 centro">
+            <a href="Lenguaje html" class="boton1">¿Qué es HTML?</a>
+        </div> 
+        <div class="col-xs-3 centro">
+            <a href="Estructura html" class="boton2">Estructura HTML</a>
+        </div> 
+        <div class="col-xs-3 centro">
+            <a href="semanticas" class="boton3">Etiquetas Semánticas</a>
+        </div> 
+        <div class="col-xs-3 centro">
+            <a href="multimedia" class="boton4">Etiquetas Multimedia</a>
+        </div> 
+    </nav>
+
+<div class="row caja1"></div>
+        
+<!-- Aquí va un ejemplo de Box model-->
+<section class="row">
+     <div class="col-xs-6 logos"></div>
+         <div class="box centro">
+    </div>
+                
+<!-- Aquí van los atributos accesskey
+Si estás en windows, los siguientes son atajos para diligenciar tu formulario:-->   
+    <div class="row col-xs-6 caja2">
+        <h1>Atributo AccessKey</h1>
+        <h2>En windows, puedes usar los siguientes atajos para diligenciar el formulario:</h2>
+        <h3>ALT+N tecla se activa "Aprendiz (ALT+N)"
+            ALT+A se activa "Programa de formación"
+            ALT+C se activa "Correo electrónico"
+            ALT+P se activa "Especialidad"
+            ALT+L será como si hubiera dado click con el mouse en el enlace
+            ALT+B se pulsará el botón "enviar"</h3>
+                   
+        <form>
+            <input accesskey="N" placeholder="Aprendiz" class="formula"/>
+            <input accesskey="A" placeholder="Programa de formación" class="formula"/>
+            <input accesskey="C" placeholder="Correo Electronico" class="formula"/>
+            <input accesskey="P" placeholder="Especialidad" class="formula"/>
+            <button accesskey="B" class="formula1">Enviar</button>
+        </form> 
+        <a accesskey="L" href="#" class="sesion"><b>Iniciar Sesion (ALT+L)</b></a>
+    </div>
+</section>
+
+<div class="row caja3"></div>
+    
+<!-- Aquí va el atributo translate-->
+    <section class="row">
+        <div class="col-xs-4 caja3">
+            <article class="box centro arriba">
+                <h1>Aributo translate</h1>
+                <p>El atributo lang indica el idioma del contenido de la etiqueta. 
+                    El valor de dicho atributo tendrá que ser el código ISO 639-1 del idioma al que hace referencia. 
+                    El atributo translate tambié se usa para indicar si el contenido de un texto es o no traducible: 
+                    <span translate="no"> CSS, HTML, ID, CLASS</span> entre otras.</p>
+                    <p>Así, indicamos al navegador o a herramientas como Google Translator, 
+                    que esa frase específica no se debe traducir porque queremos que aparezca siempre. 
+                    Si no se indica el atributo translate en una etiqueta, es como si tuviera el valor yes por defecto.</p>
+            </article>
+        </div>
+
+<!-- Aquí van el atributo title-->        
+        <div class="row col-xs-4 caja4">  
+            <h1>Atributo tittle</h1>
+            <div class="box centro arriba">
+            <img src="images/multimedia.webp"  width="90%
+            alt="Producción de Multimedia"
+            title="¡Este es un ejemplo de lo que puedes lograr en Multimedia!"/>
+            </div>
+        </div>
+
+<!-- Aquí va el atributo dir: direccionalidad de texto--> 
+        <div class="col-xs-4 caja5">  
+            <div class="box centro arriba">
+            <h3>Atributo dir</h3>
+            <p>Este es un ejemplo de texto con direccionalidad de izquierda a derecha</p>
+            <p dir="rtl">Este es un ejemplo de texto con direccionalidad de derecha a izquierda</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Aquí va el atributo Style - Estilos en línea--> 
+    <div class="box centro arriba">
+        <h2>Atributo style</h2>
+        <h3 style="padding: 5px; margin: 2px; background: rgb(5, 131, 139); border-radius: 5px; 
+                   color: white;">Este es un ejemplo de maquetación con los atributos comunes en HTML - Producción de Multimedia.</h3>                  
+                   <p>Style es un atributo que se utiliza en las etiquetas HTML para incrustar código CSS directamente 
+                    en la propia etiqueta. También se denomina "CSS embebido o CSS incrustado".</p>
+    </div>
+
+    <div class="row caja6"></div>
+
+<!--Aquí va el atributo Metadatos-->
+<footer class="row">
+        <div class="col-xs-12 centro">
+            <h2>Atributo metadatos</h2>
+            <p>Para ampliar tu conocimiento y aprender sobre programación y diseño web
+                aquí te dejamos unos sitios interesantes y ¡super recomendados!</p> 
+            
+            <div id="compartir">
+            <a href="https://lenguajehtml.com/html/introduccion/que-es-html/"
+            data-share="">Lenguaje HTML</a>
+            <a href="https://lenguajecss.com/css/introduccion/que-es-css/"
+            data-share="">Lenguaje CSS</a>
+            <a href="https://lenguajecss.com/postcss/introduccion/que-es/"
+            data-share="">PostCSS</a>
+            </div>
+        </div>
+
+    <script>
+        var links = document.querySelectorAll("#compartir a");
+        links[0].dataset.share; // 43
+        links[1].dataset.share; // 66
+        links[2].dataset.share; // 38
+    </script>
+</footer>
+       
+    </body>
+</html>
